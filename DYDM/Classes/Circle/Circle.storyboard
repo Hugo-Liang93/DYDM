@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XPg-FI-hTX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="S7g-LY-0pZ">
+            <objects>
+                <viewController id="7Nl-p2-b8j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMP-bM-wfw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6wr-m1-oW9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n38-5J-HvP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exg-UC-CEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.8" y="141.67916041979012"/>
+        </scene>
+        <!--好孕圈-->
+        <scene sceneID="gGd-sX-RgR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPg-FI-hTX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="好孕圈" image="icon_circle" selectedImage="icon_circle_change" id="L3y-b4-hSm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7X9-6C-V4h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Nl-p2-b8j" kind="relationship" relationship="rootViewController" id="BsO-yf-Ihj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahC-sI-dLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.60000000000002" y="141.67916041979012"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_circle" width="24" height="24"/>
+        <image name="icon_circle_change" width="24" height="24"/>
+    </resources>
+</document>

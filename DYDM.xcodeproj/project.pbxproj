@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0C09EE992276EC9800227266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09EE982276EC9800227266 /* AppDelegate.swift */; };
-		0C09EE9B2276EC9800227266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09EE9A2276EC9800227266 /* ViewController.swift */; };
 		0C09EE9E2276EC9800227266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EE9C2276EC9800227266 /* Main.storyboard */; };
 		0C09EEA02276EC9900227266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EE9F2276EC9900227266 /* Assets.xcassets */; };
 		0C09EEA32276EC9900227266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EEA12276EC9900227266 /* LaunchScreen.storyboard */; };
+		0C09EEB32276EEA200227266 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EEB22276EEA200227266 /* Home.storyboard */; };
+		0C09EEB52276EEBC00227266 /* Circle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EEB42276EEBC00227266 /* Circle.storyboard */; };
+		0C09EEB72276EED300227266 /* Hospital.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EEB62276EED300227266 /* Hospital.storyboard */; };
+		0C09EEB92276EEE300227266 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C09EEB82276EEE300227266 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C09EE952276EC9800227266 /* DYDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C09EE982276EC9800227266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C09EE9A2276EC9800227266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C09EE9D2276EC9800227266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C09EE9F2276EC9900227266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C09EEA22276EC9900227266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C09EEA42276EC9900227266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C09EEB22276EEA200227266 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0C09EEB42276EEBC00227266 /* Circle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Circle.storyboard; sourceTree = "<group>"; };
+		0C09EEB62276EED300227266 /* Hospital.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hospital.storyboard; sourceTree = "<group>"; };
+		0C09EEB82276EEE300227266 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,81 @@
 		0C09EE972276EC9800227266 /* DYDM */ = {
 			isa = PBXGroup;
 			children = (
-				0C09EE982276EC9800227266 /* AppDelegate.swift */,
-				0C09EE9A2276EC9800227266 /* ViewController.swift */,
-				0C09EE9C2276EC9800227266 /* Main.storyboard */,
+				0C09EEAB2276ECF000227266 /* Classes */,
 				0C09EE9F2276EC9900227266 /* Assets.xcassets */,
+				0C09EEAA2276ECA600227266 /* Support Files */,
+			);
+			path = DYDM;
+			sourceTree = "<group>";
+		};
+		0C09EEAA2276ECA600227266 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EE982276EC9800227266 /* AppDelegate.swift */,
 				0C09EEA12276EC9900227266 /* LaunchScreen.storyboard */,
 				0C09EEA42276EC9900227266 /* Info.plist */,
 			);
-			path = DYDM;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0C09EEAB2276ECF000227266 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EEAC2276ECFA00227266 /* Main */,
+				0C09EEAD2276ED0700227266 /* Home */,
+				0C09EEAF2276ED1500227266 /* Circle */,
+				0C09EEB02276ED2100227266 /* Hospital */,
+				0C09EEB12276ED3100227266 /* Profile */,
+				0C09EEAE2276ED0D00227266 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0C09EEAC2276ECFA00227266 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EE9C2276EC9800227266 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0C09EEAD2276ED0700227266 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EEB22276EEA200227266 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0C09EEAE2276ED0D00227266 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C09EEAF2276ED1500227266 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EEB42276EEBC00227266 /* Circle.storyboard */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		0C09EEB02276ED2100227266 /* Hospital */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EEB62276EED300227266 /* Hospital.storyboard */,
+			);
+			path = Hospital;
+			sourceTree = "<group>";
+		};
+		0C09EEB12276ED3100227266 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0C09EEB82276EEE300227266 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +197,11 @@
 			files = (
 				0C09EEA32276EC9900227266 /* LaunchScreen.storyboard in Resources */,
 				0C09EEA02276EC9900227266 /* Assets.xcassets in Resources */,
+				0C09EEB52276EEBC00227266 /* Circle.storyboard in Resources */,
 				0C09EE9E2276EC9800227266 /* Main.storyboard in Resources */,
+				0C09EEB72276EED300227266 /* Hospital.storyboard in Resources */,
+				0C09EEB92276EEE300227266 /* Profile.storyboard in Resources */,
+				0C09EEB32276EEA200227266 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C09EE9B2276EC9800227266 /* ViewController.swift in Sources */,
 				0C09EE992276EC9800227266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U4K4Q99MK;
-				INFOPLIST_FILE = DYDM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DYDM/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U4K4Q99MK;
-				INFOPLIST_FILE = DYDM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DYDM/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
